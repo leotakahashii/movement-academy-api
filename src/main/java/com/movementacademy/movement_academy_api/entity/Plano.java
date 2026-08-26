@@ -9,12 +9,13 @@ import java.math.BigDecimal;
 
 @Entity
 @Table(name = "plano_assinatura")
+
 public class Plano {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    
     private Long id;
-
     private BigDecimal valorMensal;
     private String nome;
     private Integer duracaoEmMeses;
